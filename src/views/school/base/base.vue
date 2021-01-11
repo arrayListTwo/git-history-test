@@ -2,8 +2,8 @@
   <div class="school-default" v-if="schoolInfo">
     <div class="header">
       <div>
-        <el-tag>校训</el-tag>
-        <span style="color: #f00">----未找到数据----</span>
+        <span>校训</span>
+        <span>---没有数据---</span>
       </div>
       <div class="main">
         <div class="item">

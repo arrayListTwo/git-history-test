@@ -34,8 +34,8 @@
     },
     async created () {
       this.mCode = this.$route.query.mCode
+      this.schoolCode = this.$route.query.schoolCode
       this.schools = await hasMajorInSchool(this.mCode)
-      this.schoolCode = this.schools[0].school_code
     },
     methods: {
       onChange(code){

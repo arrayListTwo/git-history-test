@@ -51,7 +51,8 @@
         this.$router.push({
           path: '/hasMajorInSchool',
           query: {
-            mCode: major.major_code
+            mCode: major.major_code,
+            schoolCode: major.school_code
           }
         })
       }
