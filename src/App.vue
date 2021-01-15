@@ -58,6 +58,10 @@
   html, body
     height 100%
     width 100%
+  a
+    text-decoration none
+    &:link, &:visited, &:hover, &:active, &:focus
+      text-decoration none
   #app
     font-family 'Avenir', Helvetica, Arial, sans-serif
     -webkit-font-smoothing antialiased

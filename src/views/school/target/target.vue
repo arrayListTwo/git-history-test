@@ -18,5 +18,17 @@
 </script>
 
 <style lang="stylus" scoped>
-
+.target
+  width 100%
+  .header
+    background-color #349DBC
+    color #fff
+    padding 10px
+    font-weight bold
+    border-radius 20px
+    text-align center
+    margin-bottom 20px
+  .main
+    line-height 2.5em
+    text-indent 2em
 </style>

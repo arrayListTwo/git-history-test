@@ -5,6 +5,7 @@
       <el-table
         :data="major"
         :stripe="true"
+        :border="true"
         style="width: 100%; height: 100%">
         <el-table-column
           type="index">
@@ -18,7 +19,7 @@
           label="专业名称"
           width="180">
           <template slot-scope="scope">
-            <p @click="hasMajorInSchool(scope.row)">{{ scope.row.major_name }}</p>
+            <p @click="hasMajorInSchool(scope.row)" class="to-rank">{{ scope.row.major_name }}</p>
           </template>
         </el-table-column>
         <el-table-column
@@ -62,6 +63,22 @@
 
 <style lang="stylus" scoped>
 .rank
+  width 100%
+  .header
+    background-color #349DBC
+    color #fff
+    padding 10px
+    font-weight bold
+    border-radius 20px
+    text-align center
+    margin-bottom 20px
   .table-wrapper
     height calc(100% - 500px)
+    >>> .has-gutter
+      color #000
+    >>> .el-table th
+      background-color #FF9900
+    .to-rank
+      cursor pointer
+      color #349DBC
 </style>

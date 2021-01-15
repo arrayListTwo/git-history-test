@@ -1,7 +1,7 @@
 <template>
   <div class="school-default" v-if="schoolInfo">
     <div class="header">
-      <div>
+      <div style="display: none">
         <span>校训</span>
         <span>---没有数据---</span>
       </div>
@@ -20,11 +20,11 @@
         </div>
         <div class="item">
           <div class="title">开办本科教育年份</div>
-          <div class="content">{{schoolInfo.undergraduate_year}}</div>
+          <div class="content">{{schoolInfo.undergraduate_year}}年</div>
         </div>
         <div class="item">
           <div class="title">学校网址</div>
-          <a :href="schoolInfo.website" target="_blank">{{schoolInfo.website}}</a>
+          <a class="content" :href="schoolInfo.website" target="_blank">{{schoolInfo.website}}</a>
         </div>
       </div>
     </div>
@@ -47,9 +47,15 @@
 .school-default
   .title
     width 100%
-    background-color #0099FF
+    background-color #349DBC
     color #fff
     font-weight bold
     padding 10px
     letter-spacing 0.2em
+    border-radius 20px
+    padding-left 20px
+    text-align center
+  .content
+    display block
+    padding 20px
 </style>
